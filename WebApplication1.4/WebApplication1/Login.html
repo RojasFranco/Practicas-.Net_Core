@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta charset="utf-8" />
+	<title>Login</title>
+	<script src="js/jquery.js"></script>
+	<style>
+		.container {
+			line-height: 100vh;
+			text-align: center;
+		}
+
+		.centered {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 100%;
+			background-color: aliceblue;
+			width: 400px;
+			height: 150px;
+			border: 1px gray solid;
+			border-radius: 5px;
+		}
+
+		.controls {
+			max-width: 350px;
+			margin: 20px;
+		}
+
+		.label {
+			min-width: 140px;
+			float:left;
+			text-align:right;
+		}
+
+		.button {
+			border: 1px blue solid;
+			background-color: blue;
+			border-radius: 5px;
+			min-height: 30px;
+			min-width: 100px;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$("#btnlogin").click(function () {
+				let user = $("#txtuser").val();
+				let password = $("#pswpassword").val();
+				if (user != "" && password.length >= 5) {
+					//POR FIN VOY AL SERVER
+					let data = { user: user, password: password };
+
+					$.ajax({
+						//url: "/servicio.aspx/Login",
+						url: "/service.asmx/Login",
+						method: "POST",
+						data: JSON.stringify(data),
+						dataType: 'json',
+						contentType: "application/json; charset=utf-8",
+						success: function (data) {
+							let dato = data.d || data;
+							dato = JSON.parse(dato);
+							if (dato.Status != "ok") {
+								alert(dato.Message);
+							}
+							else {
+								window.location = "https://localhost:44379/" + dato.Message
+							}
+						},
+						error: function (error) {
+							alert(JSON.stringify(error));
+						}
+					});
+				}
+				else { alert("Complete los campos")}
+            })
+            $("#btnCambiarPassword").click(function () {
+                window.location = "https://localhost:44379/CambiarPassword.html";
+            })
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="centered">
+			<div class="controls">
+				<div class="label">
+					<span>Usuario:</span>
+				</div>
+				<input id="txtuser" type="text" name="user" value="" />
+			</div>
+			<div class="controls">
+				<div class="label">
+					<span>Paswword:</span>
+				</div>
+				<input id="pswpassword" type="password" name="password" value="" />
+			</div>
+			<div class="controls">
+				<button class="button" id="btnlogin">
+					Login
+				</button>
+				<button class="button" id="btnCambiarPassword">
+					Cambiar contraseña
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

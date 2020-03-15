@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.default {
+	border-color: #600078;
+}
+
+.default-2 {
+	border-radius: 5px;
+}
+
+#txtUsuario {
+	background-color: red;
+}

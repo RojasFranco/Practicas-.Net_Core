@@ -1,0 +1,5 @@
+C:\Users\GyL\source\repos\WebApplication1\curso.common\bin\Debug\curso.common.dll
+C:\Users\GyL\source\repos\WebApplication1\curso.common\bin\Debug\curso.common.pdb
+C:\Users\GyL\source\repos\WebApplication1\curso.common\obj\Debug\curso.common.csprojAssemblyReference.cache
+C:\Users\GyL\source\repos\WebApplication1\curso.common\obj\Debug\curso.common.dll
+C:\Users\GyL\source\repos\WebApplication1\curso.common\obj\Debug\curso.common.pdb
