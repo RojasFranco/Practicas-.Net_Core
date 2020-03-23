@@ -45,7 +45,7 @@ namespace curso.DAC
 					reader = oCommand.ExecuteReader();
 					while (reader.Read())
 					{
-						loginResultDTO.User = new UserDTO(reader["Usuario"].ToString(), reader["Password"].ToString());
+						loginResultDTO.User = new UserDTO(reader["UsuarioDB"].ToString(), reader["PasswordDB"].ToString());
 					}
 					return loginResultDTO;
 				}
