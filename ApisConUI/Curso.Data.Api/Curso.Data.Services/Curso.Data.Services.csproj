@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Curso.Api\Curso.Common\Curso.Common.csproj" />
+    <ProjectReference Include="..\..\Curso.Api\Curso.Model\Curso.Model.csproj" />
+  </ItemGroup>
+
+</Project>

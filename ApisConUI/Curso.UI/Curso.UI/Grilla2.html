@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta charset="utf-8" />
+	<title>Login</title>
+	<script src="js/jquery.js"></script>
+	<style>
+
+		.table {
+			background-color: red;
+			border: 1px black solid;
+		}
+
+    	.table tr td{
+			min-width: 100px;
+			border: 1px black solid;
+		}
+
+	</style>
+	<script>
+
+		$(document).ready(function () {
+
+			$.fn.dibujarTabla = function (data) {
+				let html = "";
+				$.each(data.headers,function (index, value) {
+					html += "<th>" + value + "</th>";
+				});
+				html = "<tr>" + html + "</tr>";
+				let row = "";
+				$.each(data.rows, function (index, value) {
+					row = "";
+					$.each(value, function (index, value) {
+						row += "<td>" + value + "</td>";
+					});
+					html += "<tr>" + row + "</tr>"
+				});
+				html = "<table class='table'>" + html + "</table>"
+				this.html(html);
+			}
+
+			data = {};
+
+			$.ajax({
+                url: "https://localhost:5003/api/Tables/Grilla2",
+				method: "POST",
+                data: JSON.stringify(data),
+				dataType: 'json',
+				contentType: "application/json; charset=utf-8",
+				success: function (data) {
+					let dato = data.d || data;
+					$("#tabla").dibujarTabla(dato);
+				},
+				error: function (error) {
+					alert(JSON.stringify(error));
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="tabla"></div>
+</body>
+</html>
