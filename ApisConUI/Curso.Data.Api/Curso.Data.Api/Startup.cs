@@ -1,4 +1,5 @@
 using Curso.Data.Services;
+using Curso.Data.Services.FolderAltaPersona;
 using Curso.Model.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -45,6 +46,8 @@ namespace Curso.Data.Api
 			services.AddDbContext<CursoContext>(options => options.UseSqlServer(connectionString));
 
 			services.AddScoped<ICargaTabla, CargaTabla>();
+
+			services.AddScoped<IAltaPersona, AltaPersona>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

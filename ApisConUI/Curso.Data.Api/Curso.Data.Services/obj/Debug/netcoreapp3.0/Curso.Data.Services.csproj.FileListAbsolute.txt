@@ -25,3 +25,17 @@ C:\Users\user\Desktop\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0
 C:\Users\user\Desktop\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.csproj.CopyComplete
 C:\Users\user\Desktop\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.dll
 C:\Users\user\Desktop\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Data.Services.deps.json
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Data.Services.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Data.Services.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Common.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Model.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Common.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\bin\Debug\netcoreapp3.0\Curso.Model.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.AssemblyInfo.cs
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.csproj.CopyComplete
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Data.Api\Curso.Data.Services\obj\Debug\netcoreapp3.0\Curso.Data.Services.pdb

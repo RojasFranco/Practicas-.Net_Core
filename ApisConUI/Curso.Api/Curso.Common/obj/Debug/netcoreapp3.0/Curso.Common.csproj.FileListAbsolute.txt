@@ -22,3 +22,12 @@ C:\Users\user\Desktop\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Commo
 C:\Users\user\Desktop\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.AssemblyInfo.cs
 C:\Users\user\Desktop\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.dll
 C:\Users\user\Desktop\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\bin\Debug\netcoreapp3.0\Curso.Common.deps.json
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\bin\Debug\netcoreapp3.0\Curso.Common.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\bin\Debug\netcoreapp3.0\Curso.Common.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.AssemblyInfo.cs
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Common\obj\Debug\netcoreapp3.0\Curso.Common.pdb

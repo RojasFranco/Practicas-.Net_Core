@@ -1,4 +1,6 @@
-﻿using Curso.Data.Services;
+﻿using Curso.Common.DTO;
+using Curso.Data.Services;
+using Curso.Data.Services.FolderAltaPersona;
 using Curso.Model.Model;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -14,13 +16,15 @@ namespace Curso.Data.Api.Controllers
     {
 		private readonly ILogger<TablesController> _logger;
 		private readonly ICargaTabla _cargaTabla;
+		private readonly IAltaPersona _altaPersona;
 
-		public TablesController(ILogger<TablesController> logger, ICargaTabla cargaTabla)//, ILoginServiceAsync loginService)
+		public TablesController(ILogger<TablesController> logger, ICargaTabla cargaTabla, IAltaPersona altaPersona)//, ILoginServiceAsync loginService)
 		{
 			_logger = logger;
 			//_loginService = loginService;
 			_logger.LogInformation("Constructor TablesController");
 			this._cargaTabla = cargaTabla;
+			this._altaPersona = altaPersona;
 		}
 
 		[HttpGet("Grilla1")]
@@ -28,6 +32,18 @@ namespace Curso.Data.Api.Controllers
 		{
 			var retorno = await _cargaTabla.CargarMiTabla();			
 			return Ok(retorno);
+		}
+
+		[HttpPost("CrearPersona")]
+		public async Task<ActionResult> AltaPersona([FromBody] PersonaTablaDTO persona)
+		{
+			if(persona.NombreAlta=="" || persona.ApellidoAlta=="")
+			{
+				return BadRequest(new ResultJson() { Message = "No ingreso nombre o apellido" });
+			}
+			await _altaPersona.CargarPersona(persona);
+			return Ok(new ResultJson() { Message = "Alta realizada con exito"});
+
 		}
 	}
 }

@@ -30,3 +30,15 @@ C:\Users\user\Desktop\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.
 C:\Users\user\Desktop\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.dll
 C:\Users\user\Desktop\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.pdb
 C:\Users\user\Desktop\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.genruntimeconfig.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\bin\Debug\netcoreapp3.0\Curso.Model.deps.json
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\bin\Debug\netcoreapp3.0\Curso.Model.runtimeconfig.json
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\bin\Debug\netcoreapp3.0\Curso.Model.runtimeconfig.dev.json
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\bin\Debug\netcoreapp3.0\Curso.Model.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\bin\Debug\netcoreapp3.0\Curso.Model.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.AssemblyInfo.cs
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.dll
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.pdb
+C:\Users\user\Desktop\Ejercicio.Rojas.Franco\Curso.Api\Curso.Model\obj\Debug\netcoreapp3.0\Curso.Model.genruntimeconfig.cache

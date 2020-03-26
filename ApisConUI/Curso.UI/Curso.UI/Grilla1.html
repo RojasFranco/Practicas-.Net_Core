@@ -15,10 +15,39 @@
 				min-width: 100px;
 				border: 1px black solid;
 			}
+
+
+		.Contenedor-ppal{
+			height:200px;
+			width:300px;
+			background-color: antiquewhite;
+			text-align:center;
+		}
+
+        .Contenedor-datos {
+            display: inline-block;
+            height: auto;
+            line-height: 100%;
+            vertical-align: middle;
+        }
+
+		.botones{
+			margin:40px;
+			border:1px solid;
+			
+		}
+
+		.seccionesEnCrearPersona{
+			margin:20px;
+			text-align:left;
+			
+		}
+
 	</style>
 	<script>
-
+		
 		$(document).ready(function () {
+			$("#CrearPersona").hide();
 
 			$.fn.dibujarTabla = function (data) {
 				let html = "";
@@ -37,31 +66,124 @@
 				html = "<table class='table'>" + html + "</table>"
 				this.html(html);
 			}
-			$.ajax({
-                url: "https://localhost:5003/api/Tables/Grilla1",
-				method: "GET",
-				crossDomain: true,
-				headers: {
-					"Accept": "application/json",
-				},
-				//data: JSON.stringify(data),
-				dataType: 'json',
-				contentType: "application/json; charset=utf-8",
-				success: function (data) {
-					if (typeof data !== "object") {
-						data = data.d || data;
-						data = JSON.parse(data);
+
+			$("#btnMostrarTabla").click(function () {
+
+				$.ajax({
+					url: "https://localhost:5003/api/Tables/Grilla1",
+					method: "GET",
+					crossDomain: true,
+					headers: {
+						"Accept": "application/json",
+					},
+					//data: JSON.stringify(data),
+					dataType: 'json',
+					contentType: "application/json; charset=utf-8",
+					success: function (data) {						
+						if (typeof data !== "object") {
+							data = data.d || data;
+							data = JSON.parse(data);
+						}
+						$("#Inicial").hide();
+						$("#tabla").dibujarTabla(data);
+					},
+					error: function (xhr) {
+						console.log(xhr);
 					}
-					$("#tabla").dibujarTabla(data);
-				},
-				error: function (xhr) {
-					console.log(xhr);
-				}
+				});
+			})
+
+
+			$("#btnAltaPersona").click(function () {
+				$("#Inicial").hide();
+                //$("#tabla").hide();
+				$("#CrearPersona").show();				
 			});
+
+			$("#guardarPersona").click(function () {
+				var nombreNew = $("#txtNombreIngresado").val();
+				var apellidoNew = $("#txtApellidoIngresado").val();
+				var dniNew = parseInt($("#txtDniIngresado").val());                				
+				var data = { nombreAlta: nombreNew, apellidoAlta: apellidoNew, dniAlta : dniNew }
+
+				$.ajax({
+					url: "https://localhost:5003/api/Tables/CrearPersona",
+					data: JSON.stringify(data),
+                    crossDomain: true,
+					dataType: 'json',
+                    headers: {
+                        "Accept": "application/json",
+                    },
+					contentType: "application/json; charset=utf-8",
+					method: "POST",
+					success: function (respuesta) {
+						debugger;
+						alert(respuesta.message);
+						$("#Inicial").show();
+						$("#CrearPersona").hide();
+					},
+					error: function (error) {
+						debugger;
+						let respuesta = error.responseJSON;
+
+						alert(respuesta.message);
+						alert("Hubo err en conexion");
+					}
+				})
+			});
+
+
 		});
+		
 	</script>
 </head>
 <body>
+	<div class="Contenedor-ppal" id="Inicial">
+		<div class="Contenedor-datos">
+
+			<div class="botones">
+				<input type="button" value="Alta Persona" id="btnAltaPersona" />
+			</div>			
+			<div class="botones">
+				<input type="button" value="Mostrar Tabla" id="btnMostrarTabla" />
+			</div>
+
+
+
+		</div>
+
+	</div>
+	
+	
 	<div id="tabla"></div>
+
+	<div class="Contenedor-ppal" id="CrearPersona">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Nombre
+				<input type="text" id="txtNombreIngresado" />
+			</div>
+
+			<div class="seccionesEnCrearPersona">
+				Apellido
+				<input type="text" id="txtApellidoIngresado" />
+
+			</div>
+			
+			<div class="seccionesEnCrearPersona">
+				DNI
+				<input type="text" id="txtDniIngresado" />
+
+			</div>
+
+			<div>
+				<input type="button" value="Crear" id="guardarPersona" />
+			</div>
+
+		</div>
+
+	</div>
+	
 </body>
 </html>
