@@ -1,0 +1,16 @@
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.ui.exe
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.ui.deps.json
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.ui.runtimeconfig.json
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.ui.runtimeconfig.dev.json
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.ui.dll
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.ui.pdb
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.dll
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.objects.dll
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.objects.pdb
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\bin\Debug\netcoreapp3.0\patrones.pdb
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\obj\Debug\netcoreapp3.0\patrones.ui.csprojAssemblyReference.cache
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\obj\Debug\netcoreapp3.0\patrones.ui.AssemblyInfoInputs.cache
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\obj\Debug\netcoreapp3.0\patrones.ui.AssemblyInfo.cs
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\obj\Debug\netcoreapp3.0\patrones.ui.csproj.CopyComplete
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\obj\Debug\netcoreapp3.0\patrones.ui.dll
+C:\Users\GyL\source\repos\patrones.ui\patrones.ui\obj\Debug\netcoreapp3.0\patrones.ui.pdb

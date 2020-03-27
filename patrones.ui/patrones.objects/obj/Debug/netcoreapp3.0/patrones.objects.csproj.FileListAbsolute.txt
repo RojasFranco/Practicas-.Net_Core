@@ -1,0 +1,7 @@
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\bin\Debug\netcoreapp3.0\patrones.objects.deps.json
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\bin\Debug\netcoreapp3.0\patrones.objects.dll
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\bin\Debug\netcoreapp3.0\patrones.objects.pdb
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\obj\Debug\netcoreapp3.0\patrones.objects.AssemblyInfoInputs.cache
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\obj\Debug\netcoreapp3.0\patrones.objects.AssemblyInfo.cs
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\obj\Debug\netcoreapp3.0\patrones.objects.dll
+C:\Users\GyL\source\repos\patrones.ui\patrones.objects\obj\Debug\netcoreapp3.0\patrones.objects.pdb

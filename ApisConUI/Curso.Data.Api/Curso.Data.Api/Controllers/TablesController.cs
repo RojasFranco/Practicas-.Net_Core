@@ -37,7 +37,7 @@ namespace Curso.Data.Api.Controllers
 		[HttpPost("CrearPersona")]
 		public async Task<ActionResult> AltaPersona([FromBody] PersonaTablaDTO persona)
 		{
-			if(persona.NombreAlta=="" || persona.ApellidoAlta=="")
+			if(persona.NombreAlta.Length<3 || persona.ApellidoAlta.Length<3)
 			{
 				return BadRequest(new ResultJson() { Message = "No ingreso nombre o apellido" });
 			}

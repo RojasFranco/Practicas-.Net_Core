@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nk8aMzp4IQ+paEno8cilERWsHg+q78lJDTD2LOZt4X09u5qNE2Sq3c1nRCjqnxfnsaiGDRGxKuS87oqwAHzRiQ==",
+  "dgSpecHash": "qmd3V6Lw1S74S4ADEA+a5GBNu5A0IlZ/1UjCOMWFONPvfpLi3nCHG1vaZifaV5znldBpTAe1LEWgJH6o2JZzwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Common\\Curso.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",

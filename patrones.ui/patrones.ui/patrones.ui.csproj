@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\patrones.objects\patrones.objects.csproj" />
+    <ProjectReference Include="..\patrones\patrones.csproj" />
+  </ItemGroup>
+
+</Project>
