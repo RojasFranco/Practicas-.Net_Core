@@ -48,6 +48,8 @@
 		
 		$(document).ready(function () {
 			$("#CrearPersona").hide();
+			//$("#tabla").hide();
+			$("#btnVolverDeTabla").hide();
 
 			$.fn.dibujarTabla = function (data) {
 				let html = "";
@@ -86,11 +88,14 @@
 						}
 						$("#Inicial").hide();
 						$("#tabla").dibujarTabla(data);
+						$("#tabla").show();
 					},
 					error: function (xhr) {
-						console.log(xhr);
+						alert((xhr.responseJSON).message)
+						//console.log(xhr);
 					}
 				});
+				$("#btnVolverDeTabla").show();
 			})
 
 
@@ -103,33 +108,49 @@
 			$("#guardarPersona").click(function () {
 				var nombreNew = $("#txtNombreIngresado").val();
 				var apellidoNew = $("#txtApellidoIngresado").val();
-				var dniNew = parseInt($("#txtDniIngresado").val());                				
-				var data = { nombreAlta: nombreNew, apellidoAlta: apellidoNew, dniAlta : dniNew }
+				var dniNew = $("#txtDniIngresado").val();                				
 
-				$.ajax({
-					url: "https://localhost:5003/api/Tables/CrearPersona",
-					data: JSON.stringify(data),
-                    crossDomain: true,
-					dataType: 'json',
-                    headers: {
-                        "Accept": "application/json",
-                    },
-					contentType: "application/json; charset=utf-8",
-					method: "POST",
-					success: function (respuesta) {
-						debugger;
-						alert(respuesta.message);
-						$("#Inicial").show();
-						$("#CrearPersona").hide();
-					},
-					error: function (error) {
-						debugger;
-						let respuesta = error.responseJSON;
+				if (!isNaN(parseInt(dniNew)) && nombreNew.length > 2 && apellidoNew.length > 2) {
 
-						alert(respuesta.message);
-						alert("Hubo err en conexion");
-					}
-				})
+					var data = { nombreAlta: nombreNew, apellidoAlta: apellidoNew, dniAlta: parseInt(dniNew) }
+
+					$.ajax({
+						url: "https://localhost:5003/api/Tables/CrearPersona",
+						data: JSON.stringify(data),
+						crossDomain: true,
+						dataType: 'json',
+						headers: {
+							"Accept": "application/json",
+						},
+						contentType: "application/json; charset=utf-8",
+						method: "POST",
+						success: function (respuesta) {
+							debugger;
+							alert(respuesta.message);
+						},
+						error: function (error) {
+							debugger;
+							let respuesta = error.responseJSON;
+
+							alert(respuesta.message);
+						}
+					})
+				}
+				else {
+					alert("Complete los campos")
+                }
+			});
+
+			$("#btnVolver").click(function () {
+
+                $("#CrearPersona").hide();
+				$("#Inicial").show();
+			});
+
+			$("#btnVolverDeTabla").click(function () {
+				$("#tabla").hide();
+                $("#btnVolverDeTabla").hide();
+				$("#Inicial").show();				
 			});
 
 
@@ -156,13 +177,16 @@
 	
 	
 	<div id="tabla"></div>
+	<div class="btnVolverTabla" style="margin-top:20px" >
+		<input type="button" value="Volver" id="btnVolverDeTabla" style="margin-left:120px" />
+	</div>	
 
 	<div class="Contenedor-ppal" id="CrearPersona">
 		<div class="Contenedor-datos">
 
 			<div class="seccionesEnCrearPersona">
 				Nombre
-				<input type="text" id="txtNombreIngresado" />
+				<input type="text" id="txtNombreIngresado" style="float:right" />
 			</div>
 
 			<div class="seccionesEnCrearPersona">
@@ -173,12 +197,13 @@
 			
 			<div class="seccionesEnCrearPersona">
 				DNI
-				<input type="text" id="txtDniIngresado" />
+				<input type="text" id="txtDniIngresado" style="float:right" />
 
 			</div>
 
 			<div>
 				<input type="button" value="Crear" id="guardarPersona" />
+				<input type="button" value="Volver" id="btnVolver" />
 			</div>
 
 		</div>

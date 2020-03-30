@@ -4953,11 +4953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
       "projectName": "Curso.Data.Services",
-      "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Services\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4976,11 +4976,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
+            "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
             },
-            "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Model\\Curso.Model.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Model\\Curso.Model.csproj"
+            "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj"
             }
           }
         }

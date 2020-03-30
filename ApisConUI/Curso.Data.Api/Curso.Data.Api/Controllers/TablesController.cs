@@ -30,19 +30,31 @@ namespace Curso.Data.Api.Controllers
 		[HttpGet("Grilla1")]
 		public async Task<ActionResult> GetGrilla1()
 		{
-			var retorno = await _cargaTabla.CargarMiTabla();			
+			var retorno = await _cargaTabla.CargarMiTabla();		
+			if( retorno==null)
+			{
+				return NotFound(new ResultJson() { Message = "La tabla se encuentra vacia" });
+			}
 			return Ok(retorno);
 		}
 
 		[HttpPost("CrearPersona")]
 		public async Task<ActionResult> AltaPersona([FromBody] PersonaTablaDTO persona)
 		{
-			if(persona.NombreAlta.Length<3 || persona.ApellidoAlta.Length<3)
+			if(persona.NombreAlta=="" || persona.ApellidoAlta=="")
 			{
 				return BadRequest(new ResultJson() { Message = "No ingreso nombre o apellido" });
 			}
-			await _altaPersona.CargarPersona(persona);
-			return Ok(new ResultJson() { Message = "Alta realizada con exito"});
+			else if(persona.DniAlta > 99999999 || persona.DniAlta < 1000000)
+			{
+				return BadRequest(new ResultJson() { Message = "El dni no se encuentra en un rango valido" });
+			}
+			var personaCargada = await _altaPersona.CargarPersona(persona);
+			if(personaCargada==null)
+			{
+				return BadRequest(new ResultJson() { Message = "El dni ya se encuentra cargado" });
+			}
+			return Created("",new ResultJson() { Message = "Alta realizada con exito"});
 
 		}
 	}

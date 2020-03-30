@@ -8,6 +8,6 @@ namespace Curso.Data.Services.FolderAltaPersona
 {
     public interface IAltaPersona
     {
-        Task CargarPersona(PersonaTablaDTO persona);
+        Task<PersonaTablaDTO> CargarPersona(PersonaTablaDTO persona);
     }
 }

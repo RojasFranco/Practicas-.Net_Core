@@ -24,14 +24,19 @@ namespace Curso.Data.Services
         public async Task<TablaJSON> CargarMiTabla()
         {
             TablaJSON retorno = new TablaJSON();
+            var dbPersonas = await _cursoContext.Persons.ToListAsync();
 
-            retorno.Headers.Add("DNI");
-            retorno.Headers.Add("NOMBRE");
-            retorno.Headers.Add("APELLIDO");
+            if(dbPersonas.Count>0)
+            {
+                retorno.Headers.Add("DNI");
+                retorno.Headers.Add("NOMBRE");
+                retorno.Headers.Add("APELLIDO");
 
-            retorno.Rows = await _cursoContext.Persons.ToListAsync();
+                retorno.Rows = dbPersonas;
+                return retorno;
+            }
 
-            return retorno;            
+            return null;            
         }
     }
 }

@@ -5105,11 +5105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
       "projectName": "Curso.Data.Api",
-      "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Api\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5128,11 +5128,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
+            "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
             },
-            "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApisConUI\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj"
+            "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj"
             }
           }
         }
