@@ -1,5 +1,6 @@
 using Curso.Data.Services;
 using Curso.Data.Services.FolderAltaPersona;
+using Curso.Data.Services.FolderBajaPersona;
 using Curso.Model.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,6 +49,8 @@ namespace Curso.Data.Api
 			services.AddScoped<ICargaTabla, CargaTabla>();
 
 			services.AddScoped<IAltaPersona, AltaPersona>();
+
+			services.AddScoped<IBajaPersona, BajaPersona>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

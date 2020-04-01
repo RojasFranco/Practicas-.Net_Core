@@ -18,7 +18,7 @@
 
 
 		.Contenedor-ppal{
-			height:200px;
+			height:auto;
 			width:300px;
 			background-color: antiquewhite;
 			text-align:center;
@@ -44,12 +44,12 @@
 		}
 
 	</style>
-	<script>
-		
+	<script>		
 		$(document).ready(function () {
 			$("#CrearPersona").hide();
 			//$("#tabla").hide();
 			$("#btnVolverDeTabla").hide();
+			$("#EliminaPersona").hide();
 
 			$.fn.dibujarTabla = function (data) {
 				let html = "";
@@ -69,6 +69,7 @@
 				this.html(html);
 			}
 
+			
 			$("#btnMostrarTabla").click(function () {
 
 				$.ajax({
@@ -153,6 +154,54 @@
 				$("#Inicial").show();				
 			});
 
+            $("#btnVolverDeEliminar").click(function () {
+
+                $("#EliminaPersona").hide();
+                $("#Inicial").show();
+            });
+
+			$("#btnEliminarPersona").click(function () {
+                $("#Inicial").hide();
+				$("#EliminaPersona").show();
+			});
+
+			$("#btnEliminar").click(function () {
+				var dniEliminar = $("#txtDniEliminar").val();
+				if (!isNaN(parseInt(dniEliminar))) {
+					
+					//var data = { dniAEliminar: parseInt(dniEliminar) };
+
+					var userEliminar = parseInt(dniEliminar);
+
+					$.ajax({
+                        url: "https://localhost:5003/api/Tables/BorrarPersona/" + userEliminar,
+						method: "DELETE",                        
+						//data: JSON.stringify(data), NO SE ENVIA NADA
+						crossDomain: true,
+						dataType: 'json',
+						headers: {
+							"Accept": "application/json",
+						},
+                        contentType: "application/json; charset=utf-8",
+						success: function (respuesta) {
+							let responder = respuesta.message;
+							alert(responder);
+						},
+						error: function (error) {
+							debugger;
+							let respuesta = error.responseJSON;
+							alert(respuesta.message);
+						}
+
+					});
+				}
+				else {
+					alert("Dni ingresado no es valido");
+                }
+
+			});
+
+
 
 		});
 		
@@ -164,9 +213,12 @@
 
 			<div class="botones">
 				<input type="button" value="Alta Persona" id="btnAltaPersona" />
-			</div>			
+			</div>
 			<div class="botones">
 				<input type="button" value="Mostrar Tabla" id="btnMostrarTabla" />
+			</div>
+			<div class="botones">
+				<input type="button" value="Baja Persona" id="btnEliminarPersona" />
 			</div>
 
 
@@ -207,6 +259,23 @@
 			</div>
 
 		</div>
+
+	</div>
+
+	<div class="Contenedor-ppal" id="EliminaPersona">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Dni:
+				<input type="text" id="txtDniEliminar" />
+			</div>
+
+			<div >
+				<input type="button" value="Eliminar" id="btnEliminar" />
+				<input type="button" value="Volver" id="btnVolverDeEliminar" />
+			</div>
+		</div>
+
 
 	</div>
 	

@@ -1,10 +1,12 @@
 ﻿using Curso.Common.DTO;
 using Curso.Data.Services;
 using Curso.Data.Services.FolderAltaPersona;
+using Curso.Data.Services.FolderBajaPersona;
 using Curso.Model.Model;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Threading.Tasks;
 
 namespace Curso.Data.Api.Controllers
@@ -17,14 +19,16 @@ namespace Curso.Data.Api.Controllers
 		private readonly ILogger<TablesController> _logger;
 		private readonly ICargaTabla _cargaTabla;
 		private readonly IAltaPersona _altaPersona;
+		private readonly IBajaPersona _bajaPersona;
 
-		public TablesController(ILogger<TablesController> logger, ICargaTabla cargaTabla, IAltaPersona altaPersona)//, ILoginServiceAsync loginService)
+		public TablesController(ILogger<TablesController> logger, ICargaTabla cargaTabla, IAltaPersona altaPersona, IBajaPersona bajaPersona)
 		{
 			_logger = logger;
 			//_loginService = loginService;
 			_logger.LogInformation("Constructor TablesController");
 			this._cargaTabla = cargaTabla;
 			this._altaPersona = altaPersona;
+			_bajaPersona = bajaPersona;
 		}
 
 		[HttpGet("Grilla1")]
@@ -57,5 +61,25 @@ namespace Curso.Data.Api.Controllers
 			return Created("",new ResultJson() { Message = "Alta realizada con exito"});
 
 		}
+
+
+		[HttpDelete("BorrarPersona/{dniAEliminar}")] //O PODIA Recibir en la funcion un obj de clase(que tenga como prop long dniEliminar)
+		public async Task<ActionResult> EliminarPersona(long dniAEliminar)
+		{
+			if(dniAEliminar<1000000 || dniAEliminar > 99999999)
+			{
+				return BadRequest(new ResultJson() { Message = "El dni no esta en un rango valido" });
+			}
+			bool retornoDeBorrar = await _bajaPersona.BorrarPersona(dniAEliminar);
+			if (retornoDeBorrar)
+			{
+				return Ok(new ResultJson() { Message = "Persona borrada con exito" });
+			}
+			else
+			{
+				return BadRequest(new ResultJson() { Message = "El dni no se encuentra en la base de datos" });
+			}
+		}
+
 	}
 }

@@ -32,7 +32,6 @@ namespace curso.ui
 		[System.Web.Script.Services.ScriptMethod(UseHttpGet = false, ResponseFormat = ResponseFormat.Json)]
 		public string CambiarContrasenia(string user, string passwordActual, string passNueva)
 		{
-			System.Console.WriteLine("QONDAAAA");
 			SecurityBussines securityBussines = new SecurityBussines();
 			JavaScriptSerializer ser = new JavaScriptSerializer();
 			return ser.Serialize(securityBussines.CambiarContrasenia(new UserDTO(user, passwordActual), passNueva));
