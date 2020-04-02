@@ -1,5 +1,6 @@
 ﻿using Curso.Common.DTO;
 using Curso.Data.Services;
+using Curso.Data.Services.FolderActualizaPersona;
 using Curso.Data.Services.FolderAltaPersona;
 using Curso.Data.Services.FolderBajaPersona;
 using Curso.Model.Model;
@@ -20,8 +21,10 @@ namespace Curso.Data.Api.Controllers
 		private readonly ICargaTabla _cargaTabla;
 		private readonly IAltaPersona _altaPersona;
 		private readonly IBajaPersona _bajaPersona;
+		private readonly IActualizaPersona _actualizaPersona;
 
-		public TablesController(ILogger<TablesController> logger, ICargaTabla cargaTabla, IAltaPersona altaPersona, IBajaPersona bajaPersona)
+		public TablesController(ILogger<TablesController> logger, ICargaTabla cargaTabla, 
+			IAltaPersona altaPersona, IBajaPersona bajaPersona, IActualizaPersona actualizaPersona)
 		{
 			_logger = logger;
 			//_loginService = loginService;
@@ -29,6 +32,7 @@ namespace Curso.Data.Api.Controllers
 			this._cargaTabla = cargaTabla;
 			this._altaPersona = altaPersona;
 			_bajaPersona = bajaPersona;
+			_actualizaPersona = actualizaPersona;
 		}
 
 		[HttpGet("Grilla1")]
@@ -79,6 +83,22 @@ namespace Curso.Data.Api.Controllers
 			{
 				return BadRequest(new ResultJson() { Message = "El dni no se encuentra en la base de datos" });
 			}
+		}
+
+
+		[HttpPut("ActualizarPersona")]
+		public async Task<ActionResult> ActualizarPersona(Person datosPersona)
+		{
+			bool retorno = await _actualizaPersona.ActualizarPersona(datosPersona);
+			if(retorno)
+			{
+				return Ok(new ResultJson() { Message = "Se ha actualizado correctamente" });
+			}
+			else
+			{
+				return BadRequest(new ResultJson() { Message = "El dni ingresado no esta en la base" });
+			}
+
 		}
 
 	}

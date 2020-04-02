@@ -1,4 +1,5 @@
 using Curso.Data.Services;
+using Curso.Data.Services.FolderActualizaPersona;
 using Curso.Data.Services.FolderAltaPersona;
 using Curso.Data.Services.FolderBajaPersona;
 using Curso.Model.Context;
@@ -51,6 +52,8 @@ namespace Curso.Data.Api
 			services.AddScoped<IAltaPersona, AltaPersona>();
 
 			services.AddScoped<IBajaPersona, BajaPersona>();
+
+			services.AddScoped<IActualizaPersona, ActualizaPersona>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

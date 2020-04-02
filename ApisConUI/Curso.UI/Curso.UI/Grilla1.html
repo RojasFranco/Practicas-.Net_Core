@@ -19,7 +19,7 @@
 
 		.Contenedor-ppal{
 			height:auto;
-			width:300px;
+			width:350px;
 			background-color: antiquewhite;
 			text-align:center;
 		}
@@ -31,208 +31,49 @@
             vertical-align: middle;
         }
 
-		.botones{
-			margin:40px;
-			border:1px solid;
-			
-		}
+        .botones {
+            margin: 40px;
+            border: 1px solid;
+        }
 
-		.seccionesEnCrearPersona{
-			margin:20px;
-			text-align:left;
-			
-		}
+        .seccionesEnCrearPersona {
+            margin: 20px;
+            text-align: left;
+        }
 
 	</style>
-	<script>		
-		$(document).ready(function () {
-			$("#CrearPersona").hide();
-			//$("#tabla").hide();
-			$("#btnVolverDeTabla").hide();
-			$("#EliminaPersona").hide();
-
-			$.fn.dibujarTabla = function (data) {
-				let html = "";
-				$.each(data.headers, function (index, value) {
-					html += "<th>" + value + "</th>";
-				});
-				html = "<tr>" + html + "</tr>";
-				let row = "";
-				$.each(data.rows, function (index, value) {
-					row = "";
-					$.each(value, function (index, value) {
-						row += "<td>" + value + "</td>";
-					});
-					html += "<tr>" + row + "</tr>"
-				});
-				html = "<table class='table'>" + html + "</table>"
-				this.html(html);
-			}
-
-			
-			$("#btnMostrarTabla").click(function () {
-
-				$.ajax({
-					url: "https://localhost:5003/api/Tables/Grilla1",
-					method: "GET",
-					crossDomain: true,
-					headers: {
-						"Accept": "application/json",
-					},
-					//data: JSON.stringify(data),
-					dataType: 'json',
-					contentType: "application/json; charset=utf-8",
-					success: function (data) {						
-						if (typeof data !== "object") {
-							data = data.d || data;
-							data = JSON.parse(data);
-						}
-						$("#Inicial").hide();
-						$("#tabla").dibujarTabla(data);
-						$("#tabla").show();
-					},
-					error: function (xhr) {
-						alert((xhr.responseJSON).message)
-						//console.log(xhr);
-					}
-				});
-				$("#btnVolverDeTabla").show();
-			})
-
-
-			$("#btnAltaPersona").click(function () {
-				$("#Inicial").hide();
-                //$("#tabla").hide();
-				$("#CrearPersona").show();				
-			});
-
-			$("#guardarPersona").click(function () {
-				var nombreNew = $("#txtNombreIngresado").val();
-				var apellidoNew = $("#txtApellidoIngresado").val();
-				var dniNew = $("#txtDniIngresado").val();                				
-
-				if (!isNaN(parseInt(dniNew)) && nombreNew.length > 2 && apellidoNew.length > 2) {
-
-					var data = { nombreAlta: nombreNew, apellidoAlta: apellidoNew, dniAlta: parseInt(dniNew) }
-
-					$.ajax({
-						url: "https://localhost:5003/api/Tables/CrearPersona",
-						data: JSON.stringify(data),
-						crossDomain: true,
-						dataType: 'json',
-						headers: {
-							"Accept": "application/json",
-						},
-						contentType: "application/json; charset=utf-8",
-						method: "POST",
-						success: function (respuesta) {
-							debugger;
-							alert(respuesta.message);
-						},
-						error: function (error) {
-							debugger;
-							let respuesta = error.responseJSON;
-
-							alert(respuesta.message);
-						}
-					})
-				}
-				else {
-					alert("Complete los campos")
-                }
-			});
-
-			$("#btnVolver").click(function () {
-
-                $("#CrearPersona").hide();
-				$("#Inicial").show();
-			});
-
-			$("#btnVolverDeTabla").click(function () {
-				$("#tabla").hide();
-                $("#btnVolverDeTabla").hide();
-				$("#Inicial").show();				
-			});
-
-            $("#btnVolverDeEliminar").click(function () {
-
-                $("#EliminaPersona").hide();
-                $("#Inicial").show();
-            });
-
-			$("#btnEliminarPersona").click(function () {
-                $("#Inicial").hide();
-				$("#EliminaPersona").show();
-			});
-
-			$("#btnEliminar").click(function () {
-				var dniEliminar = $("#txtDniEliminar").val();
-				if (!isNaN(parseInt(dniEliminar))) {
-					
-					//var data = { dniAEliminar: parseInt(dniEliminar) };
-
-					var userEliminar = parseInt(dniEliminar);
-
-					$.ajax({
-                        url: "https://localhost:5003/api/Tables/BorrarPersona/" + userEliminar,
-						method: "DELETE",                        
-						//data: JSON.stringify(data), NO SE ENVIA NADA
-						crossDomain: true,
-						dataType: 'json',
-						headers: {
-							"Accept": "application/json",
-						},
-                        contentType: "application/json; charset=utf-8",
-						success: function (respuesta) {
-							let responder = respuesta.message;
-							alert(responder);
-						},
-						error: function (error) {
-							debugger;
-							let respuesta = error.responseJSON;
-							alert(respuesta.message);
-						}
-
-					});
-				}
-				else {
-					alert("Dni ingresado no es valido");
-                }
-
-			});
-
-
-
-		});
-		
-	</script>
+	<script src="js/mostrarYcrearTabla.js"></script>
+	<script src="js/crud.js"></script>
 </head>
+
 <body>
 	<div class="Contenedor-ppal" id="Inicial">
 		<div class="Contenedor-datos">
 
 			<div class="botones">
-				<input type="button" value="Alta Persona" id="btnAltaPersona" />
+				<input type="button" value="Alta Persona" id="btnAltaPersona" style="min-width:150px" />
 			</div>
 			<div class="botones">
-				<input type="button" value="Mostrar Tabla" id="btnMostrarTabla" />
+				<input type="button" value="Mostrar Tabla" id="btnMostrarTabla" style="min-width:150px" />
 			</div>
 			<div class="botones">
-				<input type="button" value="Baja Persona" id="btnEliminarPersona" />
+				<input type="button" value="Baja Persona" id="btnEliminarPersona" style="min-width:150px" />
 			</div>
 
-
+			<div class="botones">
+				<input type="button" value="Actualizar Persona" id="btnActualizarPersona" style="min-width:150px" />
+			</div>
 
 		</div>
-
 	</div>
-	
-	
-	<div id="tabla"></div>
-	<div class="btnVolverTabla" style="margin-top:20px" >
-		<input type="button" value="Volver" id="btnVolverDeTabla" style="margin-left:120px" />
-	</div>	
 
+	<!-- TABLA -->
+	<div id="tabla"></div>
+	<div class="btnVolverTabla" style="margin-top:20px">
+		<input type="button" value="Volver" id="btnVolverDeTabla" style="margin-left:120px" />
+	</div>
+
+	<!-- CREAR PERSONA -->
 	<div class="Contenedor-ppal" id="CrearPersona">
 		<div class="Contenedor-datos">
 
@@ -246,7 +87,7 @@
 				<input type="text" id="txtApellidoIngresado" />
 
 			</div>
-			
+
 			<div class="seccionesEnCrearPersona">
 				DNI
 				<input type="text" id="txtDniIngresado" style="float:right" />
@@ -262,6 +103,7 @@
 
 	</div>
 
+	<!-- ELIMINAR PERSONA -->
 	<div class="Contenedor-ppal" id="EliminaPersona">
 		<div class="Contenedor-datos">
 
@@ -270,7 +112,7 @@
 				<input type="text" id="txtDniEliminar" />
 			</div>
 
-			<div >
+			<div>
 				<input type="button" value="Eliminar" id="btnEliminar" />
 				<input type="button" value="Volver" id="btnVolverDeEliminar" />
 			</div>
@@ -278,6 +120,30 @@
 
 
 	</div>
-	
+
+
+	<!-- ACTUALIZAR PERSONA -->
+	<div class="Contenedor-ppal" id="DniActualizar">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Dni a actualizar:
+				<input type="text" id="txtDniActualizar" style="float:right" />
+			</div>
+			<div class="seccionesEnCrearPersona">
+				Nuevo Nombre:
+				<input type="text" id="txtNombreActualizar" style="float:right" />
+			</div>
+			<div class="seccionesEnCrearPersona">
+				Nuevo Apellido:
+				<input type="text" id="txtApellidoActualizar" style="float:right"/>
+			</div>
+			<div>
+				<input type="button" value="Actualizar" id="btnBuscar" />
+				<input type="button" value="Volver" id="btnVolverDeActualizar" />
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
