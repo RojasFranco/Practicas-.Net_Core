@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta charset="utf-8" />
+	<title>Login</title>
+	<script src="js/jquery.js"></script>
+	<style>
+		.table {
+			background-color: blue;
+			border: 1px black solid;
+		}
+
+			.table tr td {
+				min-width: 100px;
+				border: 1px black solid;
+			}
+
+
+		.Contenedor-ppal{
+			height:auto;
+			width:350px;
+			background-color: antiquewhite;
+			text-align:center;
+		}
+
+        .Contenedor-datos {
+            display: inline-block;
+            height: auto;
+            line-height: 100%;
+            vertical-align: middle;
+        }
+
+        .botones {
+            margin: 40px;
+            border: 1px solid;
+        }
+
+        .seccionesEnCrearPersona {
+            margin: 20px;
+            text-align: left;
+        }
+
+	</style>
+	<script src="js/mostrarYcrearTabla.js"></script>
+	<script src="js/crud.js"></script>
+</head>
+
+<body>
+	<div class="Contenedor-ppal" id="Inicial">
+		<div class="Contenedor-datos">
+
+			<div class="botones">
+				<input type="button" value="Alta Persona" id="btnAltaPersona" style="min-width:150px" />
+			</div>
+			<div class="botones">
+				<input type="button" value="Mostrar Tabla" id="btnMostrarTabla" style="min-width:150px" />
+			</div>
+			<div class="botones">
+				<input type="button" value="Baja Persona" id="btnEliminarPersona" style="min-width:150px" />
+			</div>
+
+			<div class="botones">
+				<input type="button" value="Actualizar Persona" id="btnActualizarPersona" style="min-width:150px" />
+			</div>
+
+			<div class="botones">
+				<input type="button" value="Ingresar nuevo token" id="btnVerificarConexion" style="min-width:150px" />
+			</div>
+		</div>
+	</div>
+
+	<!-- TABLA -->
+	<div id="tabla"></div>
+	<div class="btnVolverTabla" style="margin-top:20px">
+		<input type="button" value="Volver" id="btnVolverDeTabla" style="margin-left:120px" />
+	</div>
+
+	<!-- CREAR PERSONA -->
+	<div class="Contenedor-ppal" id="CrearPersona">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Nombre
+				<input type="text" id="txtNombreIngresado" style="float:right" />
+			</div>
+
+			<div class="seccionesEnCrearPersona">
+				Apellido
+				<input type="text" id="txtApellidoIngresado" />
+
+			</div>
+
+			<div class="seccionesEnCrearPersona">
+				DNI
+				<input type="text" id="txtDniIngresado" style="float:right" />
+
+			</div>
+
+			<div>
+				<input type="button" value="Crear" id="guardarPersona" />
+				<input type="button" value="Volver" id="btnVolver" />
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- ELIMINAR PERSONA -->
+	<div class="Contenedor-ppal" id="EliminaPersona">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Dni:
+				<input type="text" id="txtDniEliminar" />
+			</div>
+
+			<div>
+				<input type="button" value="Eliminar" id="btnEliminar" />
+				<input type="button" value="Volver" id="btnVolverDeEliminar" />
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<!-- ACTUALIZAR PERSONA -->
+	<div class="Contenedor-ppal" id="DniActualizar">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Dni a actualizar:
+				<input type="text" id="txtDniActualizar" style="float:right" />
+			</div>
+			<div class="seccionesEnCrearPersona">
+				Nuevo Nombre:
+				<input type="text" id="txtNombreActualizar" style="float:right" />
+			</div>
+			<div class="seccionesEnCrearPersona">
+				Nuevo Apellido:
+				<input type="text" id="txtApellidoActualizar" style="float:right" />
+			</div>
+			<div>
+				<input type="button" value="Actualizar" id="btnBuscar" />
+				<input type="button" value="Volver" id="btnVolverDeActualizar" />
+			</div>
+		</div>
+	</div>
+
+	<!-- ACTUALIZAR TOKEN -->
+	<div class="Contenedor-ppal" id="TokenValidar">
+		<div class="Contenedor-datos">
+
+			<div class="seccionesEnCrearPersona">
+				Token
+				<input type="text" id="txtTokenValidar" style="float:right" />
+			</div>
+
+			<div>
+				<input type="button" value="Actualizar" id="btnVerificarToken" />
+				<input type="button" value="Volver" id="btnVolverDeVerificar" />
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

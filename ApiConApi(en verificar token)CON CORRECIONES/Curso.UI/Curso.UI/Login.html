@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta charset="utf-8" />
+	<title>Login</title>
+	<script src="js/jquery.js"></script>
+	<style>
+		.container {
+			line-height: 100vh;
+			text-align: center;
+		}
+
+		.container2 {
+			line-height: 100vh;
+			text-align: center;
+			display: block;
+		}
+
+
+		.centered {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 100%;
+			background-color: aliceblue;
+			width: 400px;
+			height: auto;
+			min-height: 150px;
+			border: 1px gray solid;
+			border-radius: 5px;
+		}
+
+		.controls {
+			max-width: 350px;
+			margin: 20px;
+		}
+
+		.label {
+			min-width: 140px;
+			float: left;
+			text-align: right;
+		}
+
+		.button {
+			border: 1px blue solid;
+			background-color: blue;
+			border-radius: 5px;
+			min-height: 30px;
+			min-width: 100px;
+		}
+
+		.width-50 {
+			width: 50%;
+			height: 30px;
+		}
+
+		.float-left {
+			float: left;
+		}
+
+		.float-right {
+			float: right;
+		}
+
+		#change-password-container {
+			display: none;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+
+			$("#btnlogin").click(function () {
+				let user = $("#txtuser").val();
+				let password = $("#pswpassword").val();
+				if (user != "" && password.length >= 5) {
+					let data = { userName: user, password: password };
+					$.ajax({
+						url: "https://localhost:5001/api/Security/Login",
+						method: "POST",
+						crossDomain: true,
+						headers: {
+							"Accept": "application/json",
+						},
+						data: JSON.stringify(data),
+						dataType: 'json',
+						contentType: "application/json; charset=utf-8",
+						success: function (data) {
+							debugger;
+							localStorage.setItem("TOKEN", data.tokenActualizado);
+							if (typeof data !== "object") {
+								data = data.d || data;
+								data = JSON.parse(data);
+							}
+							let message = data.message || data.Message;
+							window.location = "/" + message
+						},
+						/*
+						statusCode: {
+							200: function () {
+								alert("Fue un 200");
+							}
+						},
+						*/
+						error: function (xhr) {
+							debugger;
+							let response = JSON.parse(xhr.responseText);
+							switch (xhr.status) {
+								case 400:
+								case 401:
+									alert(response.message)
+									break;
+								default:
+									alert(JSON.stringify(xhr));
+							}
+						}
+					});
+				}
+				else { alert("Complete los campos") }
+			})
+
+			$("#lnkChangePassword").click(() => {
+				$("#login-container").hide();
+				$("#change-password-container").show();
+			})
+
+			$("#btnChangePassword").click(() => {
+				let user = $("#txtuserChange").val();
+				let oldpassword = $("#oldpswpassword").val();
+				let newpassword = $("#newpswpassword").val();
+				if (user.length > 3 && oldpassword.length >= 10 && newpassword.length >= 10 && newpassword !== oldpassword) {
+					let data = { userName: user, password: oldpassword, newpassword: newpassword };
+					$.ajax({
+						url: "https://localhost:5001/api/Security/Change",
+						method: "POST",
+						crossDomain: true,
+						headers: {
+							"Accept": "application/json",
+						},
+						data: JSON.stringify(data),
+						dataType: 'json',
+						contentType: "application/json; charset=utf-8",
+						success: function (data) {
+							$("#change-password-container").hide();
+							$("#login-container").show();
+						},
+						error: function (xhr) {
+							debugger;
+							let response = JSON.parse(xhr.responseText);
+							switch (xhr.status) {
+								case 400:
+								case 401:
+									alert(response.message)
+									break;
+								default:
+									alert(JSON.stringify(xhr));
+							}
+						}
+					});
+				}
+				else { alert("Complete los campos") }
+			})
+
+		});
+	</script>
+</head>
+<body>
+	<div id="login-container" class="container">
+		<div class="centered">
+			<!--<form>-->
+			<div class="controls">
+				<div class="label">
+					<span>Usuario:</span>
+				</div>
+				<input id="txtuser" type="text" name="user" value="" />
+			</div>
+			<div class="controls">
+				<div class="label">
+					<span>Paswword:</span>
+				</div>
+				<input id="pswpassword" type="password" name="password" value="" autocomplete="off" />
+			</div>
+			<div class="controls">
+				<div class="width-50 float-left">
+					<button class="button" id="btnlogin">
+						Login
+					</button>
+				</div>
+				<div class="width-50 float-right">
+					<a class="link" id="lnkChangePassword" href="#">
+						Cambiar la contraseña
+					</a>
+				</div>
+			</div>
+			<!--</form>-->
+		</div>
+	</div>
+	<div id="change-password-container" class="container">
+		<div class="centered">
+			<!--<form>-->
+			<div class="controls">
+				<div class="label">
+					<span>Usuario:</span>
+				</div>
+				<input id="txtuserChange" type="text" name="user" value="" />
+			</div>
+			<div class="controls">
+				<div class="label">
+					<span>Paswword:</span>
+				</div>
+				<input id="oldpswpassword" type="password" name="password" value="" autocomplete="off" />
+			</div>
+			<div class="controls">
+				<div class="label">
+					<span>Nueva Paswword:</span>
+				</div>
+				<input id="newpswpassword" type="password" name="newpassword" value="" autocomplete="off" />
+			</div>
+			<div class="controls">
+				<button class="button" id="btnChangePassword">
+					Cambiar
+				</button>
+			</div>
+			<!--</form>-->
+		</div>
+
+	</div>
+</body>
+</html>
