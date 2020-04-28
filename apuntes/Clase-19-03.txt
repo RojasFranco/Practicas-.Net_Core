@@ -1,0 +1,8 @@
+Si uso la misma BaseDatos agrego proyecto existente
+que seria Curso.model del otro proyecto(se agrega el cs.project).
+En este caso tambien me sirve Curso.common
+
+Si hago un cambio en este nuevo proyecto tambien modifico
+el otro.
+
+Ejercicio: Una vez logeado te envia a la pantalla grilla.html

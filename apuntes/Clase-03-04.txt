@@ -1,0 +1,27 @@
+Hasta ahora estuvimos comunicando el browser con 1 o 2 apis.
+Ahora vamos a comunicarnos entre apis
+
+-El login devuelva 1 token (Es una estructura de validacion +compleja
+- Tiene una serie de nros y letras combinados 'aleatorio')
+En controller Login:
+    var token=Guid.NewGuid(); (Generalmente devuelve 1 token distinto)
+-Queremos que el campo usuario tenga un campo Guid que lo actualize
+cada vez que loguee. Y se lo tengo que devolver al cliente
+
+En login.html:
+  localStorage.setItem("TOKEN","asdas");
+Esto lo veo en Chrome->Application->LocalStorage
+let token= localStorage.getItem("TOKEN")--->(Para consultarlo)
+
+Def:LocalStorage es como una pequeña db, puedo almacenar con o sin
+conexion(a diferencia de las cookies)
+
+Una vez hecho esto, le envio el parametro token a Grilla1.html:
+
+
+Modif el login oara generar token, lo almacene en la base
+se lo devuelvo al cliente y lo almaceno en le localstore
+cuando llamo a grilla en cualquier metodo le mandamos el token
+Si no viene, es un badRequest,
+ si viene token vencido es 401 noAutoriz(Esto lo haremos dsps)
+

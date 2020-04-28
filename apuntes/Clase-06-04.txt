@@ -1,0 +1,9 @@
+Seguimos clase anterior... La idea es llamar a una api desde otra api
+
+En postman esta lo que se necesita
+
+Continuando el ej anterior verificar el token
+-Si su conexion es desde hace >10min devuelvo 401UnAutoriz
+
+el token es bearer:
+En el encabezado(o de donde lo mande) se usa "Bearer"+token

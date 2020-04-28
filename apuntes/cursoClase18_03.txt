@@ -1,0 +1,22 @@
+Hacer un nuevo Curso.UI(appweb Asp.net(net framework)) 
+como el de webApplication y ahi
+copiamos lo que habiamos hecho(login-grilla1-grilla2-jquery)
+(no pusimos clase de stilo en css)
+
+Cors es para habilitar que solo le puedan pegar desde 
+determinado lugar, tipo de peticion, etc.
+Es basicamente, para agregar restricciones.
+
+En $.ajax{
+crossDomain: true -> Para casos donde hay servidores distintos(a host)
+headers: -> el ejemplo que usamos en este caso es por si
+se especifica en Statup en configureServices en Cors
+ que acepta solo ese tipo de peticion
+(builder.WithHeaders("application/json")
+} tambien en Starup con WithMethods se puede especificar
+que metodos soporta
+
+Hacer cambio de contraseña->Si lo hace bien devolver 201
+-Hay que agregarlo al controlador
+
+

@@ -1,0 +1,18 @@
+dejamos solo controller asincronico
+hacemos pag con 'acento--> index.html
+
+en startUp hay que indicar
+
+Instalacion entityFramework(Se instala por proyecto o solucion)
+Dependencias->administrar paq nugget- examinar -> entity-> instalamos:
+-Microsoft.entityFramCore
+-Microsoft.Sql
+-Microsoft.entityFramCore.Tools
+
+El contextoDb es siempre igual(o muy parecido)
+
+Comandos entity:
+1) add-migration curso-v1-init
+	Si funciono bien me crea archivos nuevos(Migrations)
+2)update-database ->impacta las migraciones en la base
+3)remove-migration ->Para volver para atras la ult migracion
