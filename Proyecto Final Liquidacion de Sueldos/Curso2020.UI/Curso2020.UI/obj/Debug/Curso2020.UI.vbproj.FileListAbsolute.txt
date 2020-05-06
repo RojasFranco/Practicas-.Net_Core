@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\bin\Curso.UI.dll.config
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\bin\Curso.UI.dll
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\bin\Curso.UI.pdb
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\bin\Curso.UI.xml
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso2020.UI.vbprojAssemblyReference.cache
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso.UI.Resources.resources
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso2020.UI.vbproj.GenerateResource.cache
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso2020.UI.vbproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso2020.UI.vbproj.CopyComplete
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso.UI.dll
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso.UI.xml
+C:\Users\user\Desktop\Proyecto Final\Curso2020.UI\Curso2020.UI\obj\Debug\Curso.UI.pdb
