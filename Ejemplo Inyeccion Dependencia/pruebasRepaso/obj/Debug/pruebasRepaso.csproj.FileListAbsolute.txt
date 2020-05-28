@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\bin\Debug\pruebasRepaso.exe.config
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\bin\Debug\pruebasRepaso.exe
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\bin\Debug\pruebasRepaso.pdb
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\bin\Debug\Entidades.dll
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\bin\Debug\Entidades.pdb
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\obj\Debug\pruebasRepaso.csprojAssemblyReference.cache
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\obj\Debug\pruebasRepaso.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\obj\Debug\pruebasRepaso.csproj.CopyComplete
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\obj\Debug\pruebasRepaso.exe
+C:\Users\user\Desktop\pruebasRepaso\pruebasRepaso\obj\Debug\pruebasRepaso.pdb

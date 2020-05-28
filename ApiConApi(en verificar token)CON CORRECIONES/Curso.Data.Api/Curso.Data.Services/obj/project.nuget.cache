@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6lKT/+EwkWaShB3sNLaQpCU2IsKYmPX1E1yKaHzFuIzDGn8jtowR3Oo+OC9dr9CNTZZcZJvvoUPHlKI0gqi7Rg==",
+  "dgSpecHash": "bGJySlZqNhZUi0aGxi/mISZaKtBMIpe8KiutKIEG5xstlU2A/Mf15Yh8PbnNJXGC4hpX8u7QFrDiugWnQh+fOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

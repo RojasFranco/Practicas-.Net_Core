@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dUA6ljBnBtJD2vBF782bG9Esb5aF2CO1a6nw27JJH8aHoe1wIL7eBMexTVxclmY244qiVDb/5DLCqO9i6hQDpg==",
+  "dgSpecHash": "F2O9TB5r1eWcsa4YRqEFu0laD9JE9Gpad252T1tZsUoKit94U6pJynw5Ynp4SfJODZnhovi+xROC95EORPHVEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

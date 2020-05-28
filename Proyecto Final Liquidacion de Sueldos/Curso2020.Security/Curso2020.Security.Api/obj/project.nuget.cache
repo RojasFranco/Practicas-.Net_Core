@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qjbs8rz+zpHScgJ8F3e5GpeCXPV1emKXaHJoPl/3EN9imffecsCaJOPmzDtNqNxtV5lxLAPR/HVDTxnWnm0UHw==",
+  "dgSpecHash": "BlPj9pAmhFgABFILo0Ykl5EPijv3h0KGKZy11Ffn3REG83DpzWNdv273bUwn1r+IynSMgrjlvAZLXjV4GQY7TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Api\\Curso2020.Security.Api.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Api\\Curso2020.Security.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

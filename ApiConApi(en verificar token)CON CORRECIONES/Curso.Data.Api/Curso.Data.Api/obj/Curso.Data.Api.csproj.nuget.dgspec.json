@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj": {}
+    "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
+    "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj",
         "projectName": "Curso.Common",
-        "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj": {
+    "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Model\\Curso.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Model\\Curso.Model.csproj",
         "projectName": "Curso.Model",
-        "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Model\\Curso.Model.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj": {
+    "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
         "projectName": "Curso.Data.Api",
-        "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Api\\Curso.Data.Api.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Api\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -184,11 +184,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
+              "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
               },
-              "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj"
+              "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj"
               }
             }
           }
@@ -265,14 +265,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj": {
+    "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
         "projectName": "Curso.Data.Services",
-        "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\Curso.Data.Services.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Data.Api\\Curso.Data.Services\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Data.Api\\Curso.Data.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -291,11 +291,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
+              "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Common\\Curso.Common.csproj"
               },
-              "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Ejercicio.Rojas.Franco\\Curso.Api\\Curso.Model\\Curso.Model.csproj"
+              "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Model\\Curso.Model.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\GyL\\ApiConApi(en verificar token)CON CORRECIONES\\Curso.Api\\Curso.Model\\Curso.Model.csproj"
               }
             }
           }

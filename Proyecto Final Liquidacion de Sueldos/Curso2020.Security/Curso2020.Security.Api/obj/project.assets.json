@@ -8213,11 +8213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Api\\Curso2020.Security.Api.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Api\\Curso2020.Security.Api.csproj",
       "projectName": "Curso2020.Security.Api",
-      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Api\\Curso2020.Security.Api.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Api\\Curso2020.Security.Api.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Api\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8236,8 +8236,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Service\\Curso2020.Security.Service.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Service\\Curso2020.Security.Service.csproj"
+            "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Service\\Curso2020.Security.Service.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Service\\Curso2020.Security.Service.csproj"
             }
           }
         }

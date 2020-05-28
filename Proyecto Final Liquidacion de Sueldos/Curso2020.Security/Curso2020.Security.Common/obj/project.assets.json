@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Common\\Curso2020.Security.Common.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Common\\Curso2020.Security.Common.csproj",
       "projectName": "Curso2020.Security.Common",
-      "projectPath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Common\\Curso2020.Security.Common.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Common\\Curso2020.Security.Common.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Common\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

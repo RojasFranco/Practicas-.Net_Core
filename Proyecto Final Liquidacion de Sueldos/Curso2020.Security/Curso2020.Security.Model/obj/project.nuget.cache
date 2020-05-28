@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EZobRLZq9Bxj9+9QPxAi3567L9joB/g7s7kTN9Et40zxuMH6Xre+r3di0MuBjovJ9agnWoWnJfVlFnoNqQWVBg==",
+  "dgSpecHash": "UopCcF/oB87U5PDOHyA+TJ2ZjE6I3LUhQoeEMnE63cAxJFwfvNsfg23PnX4F0ekZ8tBYzb89RClIu5Bf62lM4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Proyecto Final\\Curso2020.Security\\Curso2020.Security.Model\\Curso2020.Security.Model.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\GyL\\Proyecto Final Liquidacion de Sueldos\\Curso2020.Security\\Curso2020.Security.Model\\Curso2020.Security.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
