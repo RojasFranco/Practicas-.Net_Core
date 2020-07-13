@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GyL.DDD.DotNet.Api</name>
+    </assembly>
+    <members>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v1.SampleController.GetSample(System.Int32)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="id" example="123">Id de la entidad Sample</param>
+            <returns>SanpleDto</returns>
+            <response code="200">Schema SampleDto</response> 
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            <response code="404">Item was not found</response> 
+            api/sample/{id}
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v1.SampleController.GetSamples">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES Solo accesible para el rol 'Manager'</remarks>
+            <returns>List of SampleDto</returns>
+            <response code="200">List of schema SampleDto objects</response> 
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            <response code="404">Item was not found</response> 
+            api/sample
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v1.SampleController.CreateSample(GyL.DDD.DotNet.Aplication.Dto.SampleDto)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="sampleDto">Schema SampleDto</param>
+            <returns>No tiene valor de retorno</returns>
+            <response code="201">Sample entity created successfully</response>
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            api/sample
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v1.SampleController.UpdatePatchSample(System.Int64,GyL.DDD.DotNet.Aplication.Dto.SampleDto)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="id" example="123">Id de la entidad Sample</param>
+            <param name="sampleDto">Schema SampleDto</param>
+            <returns>No tiene valor de retorno</returns>
+            <response code="204">Sample entity updated successfully</response>
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            api/sample/{id}
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v1.SampleController.DeleteSample(System.Int64)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="id" example="123">Id de la entidad Sample</param>
+            <returns>No tiene valor de retorno</returns>
+            <response code="204">Sample entity deleted successfully</response>
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            api/sample/{id}
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v2.SampleController.GetSample(System.Int32)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="id" example="123">Id de la entidad Sample</param>
+            <returns>SanpleDto</returns>
+            <response code="200">Schema SampleDto</response> 
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            <response code="404">Item was not found</response> 
+            api/sample/{id}
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v2.SampleController.GetSamples">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES Solo accesible para el rol 'Manager'</remarks>
+            <returns>List of SampleDto</returns>
+            <response code="200">List of schema SampleDto objects</response> 
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            <response code="404">Item was not found</response> 
+            api/sample
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v2.SampleController.CreateSample(GyL.DDD.DotNet.Aplication.Dto.SampleDto)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="sampleDto">Schema SampleDto</param>
+            <returns>No tiene valor de retorno</returns>
+            <response code="201">Sample entity created successfully</response>
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            api/sample
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v2.SampleController.UpdatePutSample(System.Int64,GyL.DDD.DotNet.Aplication.Dto.SampleDto)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="id" example="123">Id de la entidad Sample</param>
+            <param name="sampleDto">Schema SampleDto</param>
+            <returns>No tiene valor de retorno</returns>
+            <response code="204">Sample entity updated successfully</response>
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            api/sample/{id}
+        </member>
+        <member name="M:GyL.DDD.DotNet.Api.Controllers.v2.SampleController.DeleteSample(System.Int64)">
+            <summary>
+            ACA RESUMEN DE LA FUNCIONALIDAD
+            </summary>
+            <remarks>ACA VAN LAS OBSERVACIONES</remarks>
+            <param name="id" example="123">Id de la entidad Sample</param>
+            <returns>No tiene valor de retorno</returns>
+            <response code="204">Sample entity deleted successfully</response>
+            <response code="400">Bad request</response>
+            <response code="401">Unauthorized request</response>
+            <response code="403">Forbidden</response> 
+            api/sample/{id}
+        </member>
+    </members>
+</doc>

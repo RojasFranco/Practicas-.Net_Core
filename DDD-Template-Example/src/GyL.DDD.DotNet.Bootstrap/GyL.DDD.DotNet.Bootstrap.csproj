@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.0.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="Silverback.Core" Version="1.1.0" />
+    <PackageReference Include="Silverback.Core.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Silverback.Core.Model" Version="1.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GyL.DDD.DotNet.Aplication\GyL.DDD.DotNet.Aplication.csproj" />
+    <ProjectReference Include="..\GyL.DDD.DotNet.Domain\GyL.DDD.DotNet.Domain.csproj" />
+    <ProjectReference Include="..\GyL.DDD.DotNet.Persistance\GyL.DDD.DotNet.Persistance.csproj" />
+  </ItemGroup>
+
+</Project>
