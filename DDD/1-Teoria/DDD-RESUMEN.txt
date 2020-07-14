@@ -1,0 +1,78 @@
+La idea es la separacion de responsabilidades, teniendo al dominio como el centro del software
+Es para proyectos a largo plazo, si es para algo de 2 meses por ej no sirve
+Si la complejidad es tecnica tampoco se aplica DDD
+Si se aplica donde hay complejidad en la logica de negocio y tiene un ciclo de vida largo
+para que la mantenibilidad se pueda manejar de mejor forma.
+
+-Diseño guiado por el dominio
+-Crear modelo aislado y reutilizable que represente el negocio
+-Como manejar complejidad y cambios en requerimientos
+
+Dominio: Campo o area que queremos desarrollar. Por ej negocio de una tienda
+Seria la parte mas compleja del negocio
+
+Lenguaje obicuo:  Lenguaje que esta en todas partes
+Es la comunicacion entre equipo de desarrollo y expertos de dominio
+Es para tener claro los conceptos, nombre de variables.
+
+-Hay que dividir el problema en sub-dominios. Siguiendo el ejemplo en este caso
+seria por ej: ordenes, envios, catalogo.
+-Bounded Context: Contexto delimitado. A cada problema(sub dominio) le ponemos un limite
+
+**************	ASIGNAR ARQUITECTURAS *******************
+Ahora hay que ASIGNAR ARQUITECTURAS:
+Siguiendo el ejemplo de un shop de tienda.
+-El Dominio seria las ordenes: ya que es la parte mas compleja de manejar
+-Catalogo: es un CRUD, es una parte sencilla no hay mucha complejidad
+-Envios: unsamos un servicio externo, ya esta desarrollado ese servicio
+
+Capa Presentacion ----> Capa Aplicacion ----> Capa Dominio <---- Capa Infraestructura
+y ademas Capa Aplicacion -----> Capa Infraestructura
+Vemos que el negocio no depende de nadie.
+
+Tendriamos entonces:
+-Catalogo
+-Ordenes: que se divide en ordenes.Aplicacion, ordenes.Dominio, ordenes.Infraestructura
+-Web: Que es la capa presentacion
+
+*************************	CAPA DOMINIO	*************************
+Capa dominio: Representa concepto y reglas del negocio. Los detalles tecnicos los delega a la capa Infraestructura
+
+Tenemos que definir Entidades Y SUS comportamientos.
+
+Tenemos un repositorio, en el cual vamos a tener informacion de que se puede hacer con la Orden
+Add, Update, y Get. Ya que en as demas partes no lo se porque tengo separadas sus funciones
+como cambiar estado a enviado, cancelado, pendiente,  etc.
+
+Quedaria entonces OrdenAgregate:
+-IOrderRepository ----> Define que es lo que se puede hacer con esa orden
+- Orden ----> Agregar la raiz (va a tener hijos: producto y ordenItem)
+- OrderItem -----> Hijo de la Entidad Orden
+- OrderState ---> Va a tener los tipos de estados de la orden(pendiente, enviada, cancelada)
+ FALTARIA VER: 
+Objetos de valor, Servicios de dominio, y Eventos de dominio.
+
+*************************	CAPA INFRAESTRUCTURA	*************************
+-Tenemos Mapping
+Donde vamos a tener el mapeo a la BD EntityFramework (seria como el model)
+-Implementacion de los repository: Agregar ordenes, obtener ordenes, update con la BD
+Si bien estan las interfacesRepository en capa dominio, estas se implementan en la infraestructure
+
+*************************	CAPA APLICACION	*************************
+-Aca van los casos de uso. Es el coordinador de los casos de uso
+- Va a utilizar entidades de dominio y va a utilizar la infraestructura 'juntando todo', y servicios externos
+tenemos por ejemplo ordersService y IOrdersServices
+
+*************************	CAPA VISTA / PRESENTACION	*************************
+Se comunica con capa aplicacion
+Por ej MVC:Aca estan los controllers. Llama al servicio de aplicacion
+
+************************ RESUMEN *************************
+Tenemos 4 capas:
+Capa Presentacion: Aca esta interfaz usuario. Se comunica con capa aplicacion
+Capa Aplicacion: Coordinador. Usa los servicios externos, el Dominio y la Infraestructura
+Capa Dominio: Tiene Entidades, agregados, interfaces de repositorios. No saben nada de infraestructura. 
+Capa infraestructura: Implementacion del Repositorio, ORM(Entity Framework).
+
+
+

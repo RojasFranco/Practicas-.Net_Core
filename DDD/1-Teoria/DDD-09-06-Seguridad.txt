@@ -1,0 +1,16 @@
+Tenemos formas de autentificacion:
+
+-Basic: Valida usuario y contraseña
+
+-Jwt: mediante un token
+Se puede cambiar el tipo de autentificacion simplemente cambiando una 
+configuracion en appsettings.json
+
+
+Cors:
+Le decis a una api quien te puede consultar
+Se configura tambien en appsettings.json
+CorsSettings: Cors
+"Name": "Nombre que quiero que tenga",
+"Origins" : "url"
+-"Methods" : ["GET", "PUT"] ---> Solo podria usar esos metodos

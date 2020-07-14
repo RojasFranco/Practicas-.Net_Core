@@ -1,0 +1,42 @@
+Se divide el proyecto en capas logicas
+
+********************	Presentacion	********************
+Es una api, por ej web api(puede ser pag web)
+Es la capa de presentacion, con lo que tiene contacto el usuario
+
+Posee:
+-controlador
+
+******************** 	Infraestructura		********************
+a)Accesos a los datos de la BBDD (Persistencia de datos) - El Context
+-El Context
+-Migrations
+-Queries: En este caso usamos SqlKata. Son las consultas a SQL
+-Repositories: Implementacion de repositorio que son acciones que realiza nuestro negocio(que esta en dominio)
+
+b)Bootstrap: es una parte del sistema operativo (es la primer parte que se levanta)
+En este caso es lo mismo pero para nuestra api, serian las configuraciones
+(las que teniamos en startUp)
+Las configuraciones de startUp se implementan en infraestructura(BootStrap)
+
+Obs:SqlKata--->Se usa en proyectos grandes para agilizar la velocidad de EntityFramework
+********************	Negocio(Domain)		********************
+
+
+********************	Aplicacion	********************
+Mediador entre negocio e infraestructura.
+-Aca van los Dtos (en Queries)
+-Notifications
+-Services y Iservices
+
+Swagger es una especie de Postman embebido
+
+
+************************************************************
+La idea es trabajar en los Mediators de Negocio(Dominio), handler
+y en los querys.-
+Es decir usamos: 
+-Handle-->Mediators
+-Request-->Mediators
+-Controller
+-Query
